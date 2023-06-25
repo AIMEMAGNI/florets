@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florets</title>
+    <style>
+        body {
+            background-image: url('https://rare-gallery.com/thumbs/847865-Bouquets-Tulips-Gray-background-Pink-color-Heart.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .navigation-icons:hover {
+            cursor: pointer;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            margin-left: 15px;
+        }
+
+        .navigation-buttons button {
+            background-color: transparent;
+            border: none;
+            color: strong black;
+            font-weight: 700;
+            margin: 0 10px;
+        }
+
+
+        .navigation-icons {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            margin-top: 2px;
+            width: 50px;
+            margin-left: auto;
+        }
+
+        .rectangle {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-radius: 10px;
+            background: #F9FAF8;
+            width: 400px;
+            height: 70px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            margin-left: 15px;
+            /* Move the rectangle 15px to the left */
+        }
+
+        .rectangle-text {
+            text-align: left;
+            margin-bottom: 10px;
+            /* Add margin below the rectangle text */
+            margin-top: 10px;
+        }
+
+        .rectangle-buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 3px;
+        }
+
+        .find-flower-button {
+            /* flex: 2; */
+            margin-left: auto;
+            align-items: flex-end;
+            color: #F9FAF8;
+            border-radius: 2px;
+            border: 2px solid red;
+            background-color: red;
+            height: 30px;
+        }
+
+        img {
+            position: fixed;
+            top: 100px;
+            right: 0;
+            height: 700;
+            width: 70%;
+        }
+
+        .logo,
+        .header-texts,
+        .rectangle {
+            margin-left: 60px;
+            /* Adjust the value as needed */
+        }
+
+
+        select {
+            background-color: grey;
+            margin-right: 10px;
+            border-radius: 2px;
+            width: 150px;
+            height: 30px;
+            /* Set the background color to grey */
+        }
+
+        option[value=""] {
+            display: none;
+            /* Hide the default empty option */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="logo">
+            <h2>Florets</h2>
+        </div>
+
+        <div class="navigation-buttons">
+
+            <button>Home</button>
+            <button>Gifts</button>
+            <button>Bouquets</button>
+            <button>Pricing</button>
+            <button>Contact us</button>
+        </div>
+
+        <div class="navigation-icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </div>
+        <div class="header-texts">
+            <h1>Fresh flowers &<br>
+                Perfect gifts for your<br>
+                loved ones
+            </h1>
+
+            <p>Checkout our wide selection of flower arrangements to<br>
+                Make your next occasion memorable.
+            </p>
+
+        </div>
+        <div class="rectangle">
+            <h4 class="rectangle-text">Find your desired gifts</h4>
+            <div class="rectangle-buttons">
+
+                <select id="occasions">
+                    <option value="" disabled selected>Occasions</option>
+                    <option value="valentine-day">Valentine's Day</option>
+                    <option value="date">Date</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="baby-shower">Baby Shower</option>
+                    <option value="bridal-shower">Bridal Shower</option>
+                    <option value="get-well-soon">Get Well Soon</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="annivarsaire">Annivarsaire</option>
+                </select>
+
+                <select id="Recipient">
+                    <option value="" disabled selected>Recipient</option>
+                </select>
+
+                <button class="find-flower-button">Find</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
